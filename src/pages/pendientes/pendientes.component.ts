@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import {ListaDeseoServices} from '../../app/services/lista-deseos.services';
 
 @Component({
   selector: 'app-pendientes',
@@ -7,7 +8,7 @@ import { NavController } from 'ionic-angular';
 })
 export class PendientesComponent {
 
-  constructor(public navCtrl: NavController) {
+  constructor(private _listaDeseos:ListaDeseoServices) {
 
   }
 
