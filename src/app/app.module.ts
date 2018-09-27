@@ -12,6 +12,10 @@ import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 import {PendientesComponent} from'../pages/pendientes/pendientes.component';
 import {TerminadoComponent} from'../pages/terminados/terminado.component';
+import {AgregarComponent} from'../pages/agregar/agregar.components';
+
+//Pipes
+import {PlaceHolderPipe} from './pipes/placeholder.pipe';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -24,6 +28,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HomePage,
     PendientesComponent,
     TerminadoComponent,
+    AgregarComponent,
+    PlaceHolderPipe,
     TabsPage
   ],
   imports: [
@@ -38,6 +44,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HomePage,
     PendientesComponent,
     TerminadoComponent,
+    AgregarComponent,
     TabsPage
   ],
   providers: [
