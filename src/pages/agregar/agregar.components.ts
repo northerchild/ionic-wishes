@@ -26,5 +26,8 @@ export class AgregarComponent {
   	this.items.push(item);
   	this.nombreItem = "";
   }
+  borrarItem(i:number){
+  	this.items.splice(i,1);
+  }
 
 }
