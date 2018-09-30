@@ -44,7 +44,8 @@ export class AgregarComponent {
   	else{
   		let lista = new Lista(this.nombreLista);
 	  	lista.items = this.items;
-	  	this._listasDeseos.listas.push(lista);
+	  	//this._listasDeseos.listas.push(lista);
+	  	this._listasDeseos.agregarLista(lista);
 	  	this.navCtrl.pop();
   	}
   }
