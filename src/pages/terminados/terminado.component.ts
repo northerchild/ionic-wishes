@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import {ListaDeseoServices} from '../../app/services/lista-deseos.services';
+import {DetalleComponent} from'../detalle/detalles.component';
 
 @Component({
   selector: 'app-terminado',
@@ -7,8 +9,10 @@ import { NavController } from 'ionic-angular';
 })
 export class TerminadoComponent {
 
-  constructor(public navCtrl: NavController) {
+  constructor(private _listaDeseos:ListaDeseoServices, private navCtrl:NavController) {
 
   }
-
+    verDetalle(lista,i){
+  	this.navCtrl.push(DetalleComponent,{lista,i})
+  }
 }

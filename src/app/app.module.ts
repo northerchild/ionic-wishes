@@ -17,6 +17,7 @@ import {DetalleComponent} from'../pages/detalle/detalles.component';
 
 //Pipes
 import {PlaceHolderPipe} from './pipes/placeholder.pipe';
+import {PendientesPipe} from './pipes/pendiente.pipe';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -32,6 +33,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     AgregarComponent,
     DetalleComponent,
     PlaceHolderPipe,
+    PendientesPipe,
     TabsPage
   ],
   imports: [

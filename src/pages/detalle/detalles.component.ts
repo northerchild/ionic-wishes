@@ -17,17 +17,17 @@ export class DetalleComponent {
   	this.lista = this.navParams.get('lista');
   }
 
-  actualizar(item:ListaItem){
-  	item.completado = !item.completado;
-  	let todosMarcados = true;
-  	for(let item of this.lista.item){
-  		if(!item.completado) {
-  			todosMarcados = false;
-  			break;
-  		}
-  	}
-  	this.lista.terminada = todosMarcados;
-  	this._listaDeseos.actualizarData();
+  actualizar(item:ListaItem) {
+    item.completado = !item.completado;
+    let todosMarcados = true;
+    for (let item of this.lista.items) {
+        if(!item.completado) {
+          todosMarcados = false;
+          break;
+        }
+    }
+    this.lista.terminado = todosMarcados;
+    this._listaDeseos.actualizarData();
   }
   borrarItem(){
   	const confirm = this.alertCtrl.create({
